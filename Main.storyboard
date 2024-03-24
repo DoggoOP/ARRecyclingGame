@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xy4-Ts-N1j">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!-- -->
+        <scene sceneID="hlQ-Pw-6yt">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="r3A-VO-FS1" customClass="GuessViewController" customModule="RecyclingGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FsY-FQ-ZLK">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="948-IE-DIV">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="1183"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhZ-K6-dfV">
+                                <rect key="frame" x="0.0" y="1238" width="1024" height="87"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mmo-di-tvI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="z1H-ze-jQE"/>
+                    <connections>
+                        <outlet property="classificationLabel" destination="xhZ-K6-dfV" id="ol4-ve-e4m"/>
+                        <outlet property="sceneView" destination="948-IE-DIV" id="csC-Hz-XNI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hs-1o-ny9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="187.55622188905548"/>
+        </scene>
+        <!--Can I recycle this?-->
+        <scene sceneID="noD-T3-mb5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJM-kK-bvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Home Page" modalPresentationStyle="fullScreen" id="2Se-fa-0x3" customClass="ViewController" customModule="RecyclingGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ksS-gZ-O84">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DALL·E Eco" translatesAutoresizingMaskIntoConstraints="NO" id="UN3-Jx-ABa">
+                                <rect key="frame" x="0.0" y="64" width="1030" height="1142"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text=" " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqJ-KC-sj6">
+                                <rect key="frame" x="0.0" y="1032" width="1024" height="334"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ri-c2-4hC">
+                                <rect key="frame" x="715" y="1265" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="cameraBtn:" destination="2Se-fa-0x3" eventType="touchUpInside" id="VMd-kF-87f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po6-B0-lWE">
+                                <rect key="frame" x="0.0" y="1118" width="1024" height="78"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Src-UK-C16">
+                                <rect key="frame" x="225" y="1265" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="photo.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="testPhotoWithSender:" destination="2Se-fa-0x3" eventType="touchUpInside" id="5W1-sk-8fP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gqS-Mp-nA6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Can I recycle this?" largeTitleDisplayMode="always" id="RZ4-zd-9E4"/>
+                    <connections>
+                        <outlet property="View3" destination="bqJ-KC-sj6" id="GyT-Ud-9o8"/>
+                        <outlet property="scoreLabel" destination="po6-B0-lWE" id="cvn-g4-1qN"/>
+                        <outlet property="textView" destination="bqJ-KC-sj6" id="VJC-YU-Lc1"/>
+                        <segue destination="r3A-VO-FS1" kind="show" identifier="showGuessViewController" id="k1E-Ao-oe9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1919.2" y="187.55622188905548"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TdC-eV-6A1">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="xy4-Ts-N1j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lLe-Lp-igw">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Se-fa-0x3" kind="relationship" relationship="rootViewController" id="7wF-Zf-Tdp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Fz-Zv-Iep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="187.55622188905548"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="AccentColor"/>
+    <resources>
+        <image name="DALL·E Eco" width="1024" height="1024"/>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
